@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="facebook-domain-verification" content="oghjpvckuvqtree9bcegxtqu1xr2qk" />
+  <title>Whatsapp</title>
+  <link rel="icon" type="image/png" href="./utils/logo.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+</head>
+
+<body>
+  <div class="header">
+    <div class="left">
+      <i class="zmdi zmdi-arrow-left"></i>
+      <img width="36px" style="border-radius: 50%;"
+        src="https://cf.workana.com/logos/0caa94c5e96cfd6accbf8ffad877d602/qb/me_192_192.jpg">
+      <div class="user-infos">
+        <span style="font-weight: 550; font-size: 17px;">Vinycius</span>
+        <span>online</span>
+      </div>
+    </div>
+    <div class="right">
+      <i class="zmdi zmdi-phone" style="margin-top: 2px;"></i>
+      <i class="zmdi zmdi-attachment-alt attachment"></i>
+      <i class="zmdi zmdi-more-vert"></i>
+    </div>
+  </div>
+  <div class="container" id="container">
+
+    <div class="new-msg">
+      <img width="35px" height="35px" style="border-radius: 50%; margin-top: 15px;"
+        src="https://cf.workana.com/logos/0caa94c5e96cfd6accbf8ffad877d602/qb/me_192_192.jpg">
+      <div class="user-msg msgs">
+        <div>Olá, preparado para garantir seu acesso exclusivo ao App que está realizando os sonhos de milhares de
+          pessoas? temos mais de 30.000 usuarios lucrando diariamente, tenho uma licença <span
+            style="color: green;">GRATUITA</span> reservada para você. Posso continuar?</div>
+      </div>
+    </div>
+    
+  </div>
+  
+  <div class="footer">
+
+    <div class="msg-input-container">
+      <i class="zmdi zmdi-mood" style="color: gray;"></i>
+      <input class="msg-input" type="text" placeholder="Mensagem" name="" id="msg-input">
+      <i class="zmdi zmdi-attachment-alt attachment" onclick="handleUpload()"></i>
+      <!-- <div class="money-icon">R$</div> -->
+      <i class="zmdi zmdi-camera" style="color: gray;" onclick="handleUpload()"></i>
+    </div>
+
+    <div class="send-mg-container" onclick="handleMsgInput()">
+      <i class="zmdi zmdi-mail-send"></i>
+    </div>
+
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+
+  <script src="./js/script.js"></script>
+  <script src="./js/socketScript.js"></script>
+</body>
+
+</html> 
+
+
