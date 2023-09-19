@@ -28,7 +28,7 @@ class MpFunctions {
             },
 
             external_reference: `${userID}`,
-            notification_url: `https://171d90e32ffb1d.lhr.life/webhook/${userID}`
+            notification_url: `https://mp-teste.onrender.com/webhook/${userID}`
         }
 
         const response = await mercadopago.payment.create(transactionData)

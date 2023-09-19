@@ -48,7 +48,8 @@
     flex-direction: column;
     justify-content: center;
     padding: 15px;
-    margin-top: 100px;
+    margin-top: -150px;
+    height: 900px;
     color: black;
     font-weight: 700;
   }
@@ -60,6 +61,26 @@
 
   .code-copy-container {
     width: 100%;
+  }
+
+  @media (min-width: 900px) {
+    body {
+        width: 50%;
+        margin: auto;
+    }
+
+    .qr-container img {
+      height: 600px;
+      width: 100%;
+    }
+
+    .pix-code-container {
+      margin-top: 330px;
+    }
+
+    .container {
+      margin-top: 50px;
+    }
   }
 </style>
 
